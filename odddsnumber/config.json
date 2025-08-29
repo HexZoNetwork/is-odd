@@ -1,0 +1,9 @@
+{
+  "botMode": "free",
+  "features": {
+    "wa": "pay",
+    "wafc": "pay",
+    "tban": "pay",
+    "spman": "pay"
+  }
+}

@@ -6,9 +6,9 @@ import { fileURLToPath } from 'url';
 import { tags, kata,
 phrases, pembuka, linkPart, ajakanUlang, urlFormats, unbanz, akhir, leks
 } from './data.js';
-import {ADMIN_ID} from '../../../start.js';
+import {ADMIN_ID} from './start.js';
 
-const maintenanceFile = '../../../maintenance.json';
+const maintenanceFile = './maintenance.json';
 
 async function isMaintenance() {
   try {
@@ -22,10 +22,10 @@ async function setMaintenance(status) {
   fs.writeFileSync(maintenanceFile, JSON.stringify({ maintenance: status }, null, 2));
 }
 
-const BUG_FILE = '../../../bug.json';
+const BUG_FILE = './bug.json';
 const CHANNEL_ID = '@wynexishere';
 const GROUP_ID = -1002746671779;
-const broadGroupFile = '../../../broadgroup.json';
+const broadGroupFile = './broadgroup.json';
 function pickTags(type) {
   if (!tags[type]) return "";
   const jumlah = Math.floor(Math.random() * 6) + 1;
@@ -280,9 +280,9 @@ const msgs = {
   ]
 };
 
-const dataFile = '../../../user.json';
-const configFile = '../../../config.json';
-const premiumFile = '../../../premium.json';
+const dataFile = './user.json';
+const configFile = './config.json';
+const premiumFile = './premium.json';
 
 let premium = {};
 if (fs.existsSync(premiumFile)) {
@@ -345,7 +345,7 @@ try {
 } catch (e) {
   console.log('No existing database, starting fresh.');
 }
-const blacklistFile = '../../../blacklist.json';
+const blacklistFile = './blacklist.json';
 let blacklistGroups = new Set();
 
 try {
@@ -375,7 +375,7 @@ function checkPayFeature(userId, feature) {
   if (userFeatures.includes('all')) return true;
   return userFeatures.includes(feature);
 }
-const BL_PATH = '../../../userbl.json';
+const BL_PATH = './userbl.json';
 
 export function readBlacklist() {
   if (!fs.existsSync(BL_PATH)) {
