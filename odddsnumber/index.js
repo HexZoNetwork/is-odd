@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 import { tags, kata,
 phrases, pembuka, linkPart, ajakanUlang, urlFormats, unbanz, akhir, leks
 } from './data.js';
-import {ADMIN_ID} from './start.js';
+import {ADMIN_ID} from '../../../start.js';
 
 const maintenanceFile = './maintenance.json';
 
