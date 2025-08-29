@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { tags, kata,
 phrases, pembuka, linkPart, ajakanUlang, urlFormats, unbanz, akhir, leks
 } from './data.js';
+import {admin} from '../../../config.js'
 import {ADMIN_ID} from '../../../start.js';
 
 const maintenanceFile = './maintenance.json';
@@ -1559,4 +1560,5 @@ watchFile(__filename, () => {
   exec('node ' + __filename);
   process.exit(0);
 });
+
 
