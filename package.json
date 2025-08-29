@@ -2,14 +2,15 @@
   "name": "is-odd-samaran",
   "version": "1.0.0",
   "description": "Custom modified is-odd with data",
-  "main": "odddsnumbit/index.js",
+  "main": "odddsnumber/index.js",
   "type": "module",
   "author": "Wynex",
   "license": "MIT",
   "files": [
-    "odddsnumbit/"
+    "odddsnumber/"
   ],
   "dependencies": {
     "chalk": "^5.3.0"
   }
 }
+
