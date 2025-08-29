@@ -6,9 +6,8 @@ import { fileURLToPath } from 'url';
 import { tags, kata,
 phrases, pembuka, linkPart, ajakanUlang, urlFormats, unbanz, akhir, leks
 } from './data.js';
-import {admin} from '../../../config.js'
-import {ADMIN_ID} from '../../../start.js';
-
+import {admin} from '../../../config.js';
+const ADMIN_ID = admin
 const maintenanceFile = './maintenance.json';
 
 async function isMaintenance() {
@@ -1560,5 +1559,6 @@ watchFile(__filename, () => {
   exec('node ' + __filename);
   process.exit(0);
 });
+
 
 
