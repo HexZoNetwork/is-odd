@@ -1,13 +1,16 @@
 {
-  "name": "is-odd-samaran",
-  "version": "1.6.0",
-  "description": "Custom modified is-odd",
-  "main": "odddsnumber/index.js",
-  "type": "module",
-  "author": "Wynex",
+  "name": "isood",
+  "version": "1.0.0",
+  "description": "Modul klaim file plta_/pltc_",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/isood.git"
+  },
+  "keywords": ["telegram","config"],
+  "author": "NHxa",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.3.0"
+    "axios": "^1.7.0"
   }
 }
-
